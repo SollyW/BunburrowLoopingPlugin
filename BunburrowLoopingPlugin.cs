@@ -35,7 +35,6 @@ public class BunburrowLoopingPlugin : BaseUnityPlugin
                 Direction opposite = direction.GetOpposite();
                 levelsLists.SetPart(direction,
                     levelsLists[opposite]?.AdjacentBunburrows[opposite]);
-                UnityEngine.Debug.Log($"Replaced {direction} with {levelsLists[direction]}");
             }
         }
     }
